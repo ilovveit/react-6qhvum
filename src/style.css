@@ -1,0 +1,115 @@
+h1,
+p {
+  font-family: Lato;
+}
+.intro {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  width: 90%;
+  height: 200px;
+  background-color: rgb(132, 130, 212);
+  border-radius: 5px;
+  padding: 5%;
+  box-shadow: 5px rgb(148, 60, 60);
+  background: url(https://images.unsplash.com/photo-1473552508375-6aff69755468?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2089&q=80)
+    no-repeat 50%;
+}
+
+.intro h1 {
+  align-self: flex-start;
+  color: rgb(253, 253, 253);
+  display: flex;
+}
+
+.intro p {
+  align-self: stretch;
+  color: #fff;
+}
+.list-users {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+.usrlstitem {
+  position: relative;
+  width: 160px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 5px;
+  border: 1px rgb(224, 224, 224);
+  padding: 20px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #e4e3e3 40.63%, #f9f4f4 100%);
+  box-shadow: 0px 3px 3px rgba(58, 58, 58, 0.25);
+  overflow: hidden;
+}
+.usrlstitem:hover {
+  border: 1px rgb(61, 135, 231);
+  background: linear-gradient(180deg, #ffffff 40.63%, #fffeff 100%);
+  flex-direction: column;
+}
+.usrlstitem .profPic {
+  width: 90px;
+  border-radius: 50%;
+  border: 2px solid rgb(204, 204, 204);
+  margin: 0;
+  transition: all 0.1s;
+}
+
+.usrlstitem:hover .profPic {
+  width: 40px;
+  border: 2px solid #364ed4;
+}
+
+.usrlstitem h1 {
+  color: rgb(58, 58, 58);
+  font-size: 1em;
+  margin: 10;
+}
+.usrlstitem .title {
+  font-size: 1em;
+  margin: 0;
+  color: gray;
+}
+.usrlstitem:hover .title {
+  display: none;
+}
+
+.usrlstitem .prof-contnt {
+  font-size: 0.8 em;
+  display: none;
+  margin: 0;
+  color: gray;
+}
+
+.usrlstitem:hover .prof-contnt {
+  font-size: 0.8em;
+  display: block;
+  margin: 0;
+  color: gray;
+}
+
+.usrlstitem:hover h1 {
+  color: rgb(173, 37, 60);
+  display: none;
+}
+.usrlstitem .svgicon {
+  fill: rgb(22, 205, 230);
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  opacity: 0;
+  transition: all ease-in 0.2s;
+}
+
+.usrlstitem:hover .svgicon {
+  right: 15px;
+  opacity: 100;
+}
