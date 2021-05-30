@@ -3,11 +3,10 @@ p {
   font-family: Lato;
 }
 .intro {
+  margin: 0 auto;
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
-  width: 90%;
-  height: 200px;
   background-color: rgb(132, 130, 212);
   border-radius: 5px;
   padding: 5%;
@@ -31,7 +30,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  justify-content: space-between;
+  justify-content:flex-start;
   text-align: center;
   padding: 20px;
 }
@@ -42,7 +41,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 5px;
+  margin: 10px 12px;
   border: 1px rgb(224, 224, 224);
   padding: 20px;
   border-radius: 5px;
@@ -51,6 +50,7 @@ p {
   overflow: hidden;
 }
 .usrlstitem:hover {
+  cursor: pointer;
   border: 1px rgb(61, 135, 231);
   background: linear-gradient(180deg, #ffffff 40.63%, #fffeff 100%);
   flex-direction: column;
@@ -112,4 +112,26 @@ p {
 .usrlstitem:hover .svgicon {
   right: 15px;
   opacity: 100;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .usrlstitem {
+    position: relative;
+    width: 80%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 5px;
+    border: 1px rgb(224, 224, 224);
+    padding: 20px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #e4e3e3 40.63%, #f9f4f4 100%);
+    box-shadow: 0px 3px 3px rgba(58, 58, 58, 0.25);
+    overflow: hidden;
+  }
 }
